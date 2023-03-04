@@ -1,0 +1,232 @@
+.header {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	position: relative;
+	background-color: $violet-400;
+
+	&::after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: $violet-400;
+		z-index: -1;
+		bottom: 0;
+		transform-origin: right bottom;
+		transform: skewY(-3deg);
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		z-index: 1;
+		color: $white;
+	}
+
+	&__content {
+		max-width: 520px;
+		width: 100%;
+		margin-right: 20px;
+        position: relative;
+
+		@include mq(lg) {
+			margin-right: 0;
+		}
+
+        &::before {
+            position: absolute;
+            content: "";
+            @include bg-conatin;
+            width: 70px;
+            height: 70px;
+            background-image: url('../img/icons/check.svg');
+            top: 0;
+            transform: translateY(-100%) translateX(100%);
+            right: 0;
+        }
+	}
+
+	&__title {
+		margin-bottom: 5px;
+		line-height: 1;
+        font-weight: $fw-700;
+		@include adaptiv-value('font-size', 35, 26, 1);
+
+		@include mq(sm) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__accent {
+		@include mq(sm) {
+			color: $yellow-400;
+		}
+	}
+
+	&__text {
+		@include adaptiv-value('margin-bottom', 35, 25, 1);
+		@include adaptiv-value('font-size', 20, 18, 1);
+	}
+
+	&__swiper {
+		@include mq(lg) {
+			display: none;
+		}
+	}
+
+	&__tags {
+		display: flex;
+		flex-wrap: wrap;
+		@include adaptiv-value('margin-right', -20, -14, 1);
+		margin-bottom: 20px;
+	}
+
+	&__tag {
+		@include adaptiv-value('margin-right', 18, 14, 1);
+		@include adaptiv-value('margin-bottom', 18, 14, 1);
+		border: 2px solid $white;
+		border-radius: 5px;
+	}
+
+	&__anchor {
+		@include adaptiv-value('font-size', 17, 13, 1);
+		@include adaptiv-value('padding', 6, 4, 1);
+		line-height: 1.2;
+	}
+}
+
+.header-top {
+	font-size: 14px;
+	@include flex-center-sb;
+	@include adaptiv-value('margin-bottom', 65, 20, 1);
+
+	&__logo {
+		margin-right: 10px;
+	}
+
+	&__menu {
+		@include mq(md) {
+			display: none;
+		}
+	}
+
+	&__items {
+		display: flex;
+		margin-bottom: 15px;
+	}
+
+	&__item {
+		color: $violet-400;
+
+		&--dop {
+			position: relative;
+			padding-right: 20px;
+
+			&::before {
+				position: absolute;
+				content: '';
+				width: 12px;
+				height: 12px;
+				// background-image: url('../img/icons/arrow.svg');
+				background-image: url('../img/logo.svg');
+				@include bg-conatin;
+				top: 50%;
+				transform: translateY(-50%);
+				right: 0;
+			}
+
+			&::after {
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 30px;
+				left: 0;
+				bottom: 0;
+				transform: translateY(100%);
+			}
+
+			&:hover {
+				.header-top__submenu {
+					display: block;
+				}
+			}
+		}
+
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__submenu {
+		position: absolute;
+		display: none;
+		background-color: $white;
+		border-radius: 6px;
+		box-shadow: 0 3px 6px 0 rgb($black, 20%);
+		width: 184px;
+		top: 30px;
+		left: 0;
+		transform: translateX(-30%);
+		padding: 24px;
+	}
+
+	&__dop {
+		color: $dark-800;
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	&__phone,
+	&__email {
+		margin-right: 25px;
+		display: inline-block;
+	}
+
+	&__phone {
+		font-size: 18px;
+		font-weight: $fw-500;
+		color: $dark-800;
+	}
+
+	&__email {
+		width: 20px;
+		height: 20px;
+		@include bg-conatin;
+		filter: invert(90%) sepia(3%) saturate(1664%) hue-rotate(202deg)
+			brightness(94%) contrast(87%);
+		background-image: url('../img/icons/email.svg');
+	}
+
+	&__account {
+		background-color: $violet-400;
+		color: $white;
+		padding: 12px 44px 12px 24px;
+		position: relative;
+		font-size: 16px;
+		font-weight: $fw-700;
+		border-radius: 6px;
+		box-shadow: 0 2px 1px 0 rgb(255 229 59 / 36%);
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 15px;
+			height: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 15px;
+			@include bg-conatin;
+			// background-image: url('../img/icons/arrow-long.svg');
+			background-image: url('../img/icons/email.svg');
+		}
+	}
+}
