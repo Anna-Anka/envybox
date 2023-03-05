@@ -63,7 +63,7 @@
         <div class="header__row">
             <div class="header__content">
                 <p class="header__title">
-                    Квиз помогает 
+                    Квиз помогает
                     <span class="header__accent">
                         очень просто получить контакты клиента
                     </span>
@@ -88,17 +88,55 @@
                         <a class="header__anchor" href="#">Стоимость</a>
                     </li>
                 </ul>
+                <ul class="header__tags header__tags--mobile">
+                    <li class="header__tag">
+                        <a class="header__anchor" href="#">Что дает видеовиджет?</a>
+                    </li>
+                    <li class="header__tag">
+                        <a class="header__anchor" href="#">Стоимость
+                        </a>
+                    </li>
+                    <li class="header__tag">
+                        <a class="header__anchor" href="#">E-mail</a>
+                    </li>
+                    <li class="header__tag">
+                        <a class="header__anchor" href="#">Как это работает?</a>
+                    </li>
+                    <li class="header__tag">
+                        <a class="header__anchor" href="#">Преимущества</a>
+                    </li>
+                    <li class="header__tag">
+                        <a class="header__anchor" href="#">Подключить за 0 руб</a>
+                    </li>
+                </ul>
                 <form class="form-email" action="#">
-                    
+                    <div class="form-email__box">
+                        <label class="sr-only" for="email">Введите электронную почту</label>
+                        <input class="form-email__field" name="email" type="email" placeholder="Электронная почта" id="form-email" required>
+                    </div>
+                    <button class="form-email__button button" type="submit">Попробуйте бесплатно</button>
                 </form>
             </div>
-            <div class="header__swiper swiper">
-              <ul class="header__items swiper-wrapper">
-                 <li class="header__item swiper-slide">
-                   
-                 </li>
-              </ul>
+            <div class="header__images" aria-hidden="true">
+                <div class="header__swiper swiper">
+                    <ul class="header__items swiper-wrapper">
+                        <li class="header__item swiper-slide">
+                            <div class="header__bg" style="background-image: url('img/header/bg-1.png');"> </div>
+                        </li>
+                        <li class="header__item swiper-slide">
+                            <div class="header__bg" style="background-image: url('img/header/bg-1.png');"> </div>
+                        </li>
+                        <li class="header__item swiper-slide">
+                            <div class="header__bg" style="background-image: url('img/header/bg-1.png');"> </div>
+                        </li>
+                        <li class="header__item swiper-slide">
+                            <div class="header__bg" style="background-image: url('img/header/bg-1.png');"> </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="header__decor" aria-hidden="true"></div>
 </header>
