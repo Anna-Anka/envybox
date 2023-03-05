@@ -1,0 +1,98 @@
+.how {
+	line-height: 1;
+	&__inner {
+		width: 100%;
+		max-width: 1050px;
+		margin: 0 auto;
+	}
+
+	&__wrapper {
+		@include flex-center-sb;
+		width: 100%;
+		max-width: 920px;
+		margin-left: auto;
+	}
+
+	&__items {
+		width: 100%;
+		max-width: 425px;
+		margin-right: 20px;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		line-height: 1;
+		@include adaptiv-value('font-size', 18, 16, 1);
+
+		&:not(:last-child) {
+			@include adaptiv-value('margin-bottom', 50, 35, 1);
+		}
+	}
+
+	&__icon {
+		width: 100%;
+		max-width: 65px;
+		height: 65px;
+		margin-right: 16px;
+		background-color: $violet-300;
+		border-radius: 20px;
+		transform: rotate(45deg);
+		@include flex-all-center;
+
+		span {
+			width: 30px;
+			height: 30px;
+			transform: rotate(-45deg);
+			@include bg-conatin;
+		}
+	}
+
+	&__box {
+		position: relative;
+		width: 100%;
+		max-width: 425px;
+		padding-top: 72px;
+		padding-bottom: 100px;
+		padding-left: 56px;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			background-color: $violet-300;
+			border-radius: 35%;
+			transform: rotate(45deg);
+			content: '';
+		}
+	}
+
+	&__number {
+		@include adaptiv-value('font-size', 68, 45, 1);
+		@include adaptiv-value('margin-bottom', 35, 10, 1);
+		display: block;
+		color: $violet-400;
+		font-weight: $fw-700;
+	}
+
+	&__nonaccent {
+		@include adaptiv-value('font-size', 67, 50, 1);
+		color: $grey-300;
+	}
+
+	&__accent {
+		font-weight: $fw-500;
+	}
+
+	&__subtitle {
+		@include adaptiv-value('font-size', 20, 14, 1);
+		@include adaptiv-value('margin-bottom', 25, 10, 1);
+	}
+
+	&__subtext {
+		@include adaptiv-value('font-size', 16, 12, 1);
+	}
+}

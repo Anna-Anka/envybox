@@ -1,5 +1,5 @@
 body {
-	color: $black;
+	color: $dark-800;
 	font-weight: $fw-400;
 	font-size: 18px;
 	font-family: $grotesque, Arial, sans-serif;
@@ -92,12 +92,25 @@ body {
 	}
 }
 
+.section {
+	@include adaptiv-value('padding-top', 100, 50, 1);
+	@include adaptiv-value('padding-bottom', 100, 50, 1);
+}
+
+.title {
+	font-weight: $fw-700;
+	line-height: 1;
+	@include adaptiv-value('font-size', 53, 22, 1);
+	@include adaptiv-value('margin-bottom', 60, 35, 1);
+}
+
 .swiper-pagination-bullet {
 	width: 6px;
 	height: 6px;
 	background: $white;
 	opacity: 0.5;
-    transition: border-radius 0.4s ease-out, width 0.4s ease-out, opacity 0.4s ease-out;
+	transition: border-radius 0.4s ease-out, width 0.4s ease-out,
+		opacity 0.4s ease-out;
 }
 
 .swiper-pagination-bullet-active {
