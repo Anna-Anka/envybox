@@ -1,9 +1,20 @@
 .how {
 	line-height: 1;
+
 	&__inner {
 		width: 100%;
 		max-width: 1050px;
 		margin: 0 auto;
+
+		@include mq(lg) {
+			max-width: 100%;
+		}
+	}
+
+	&__title {
+		@include mq(md) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__wrapper {
@@ -11,12 +22,26 @@
 		width: 100%;
 		max-width: 920px;
 		margin-left: auto;
+
+		@include mq(lg) {
+			max-width: 100%;
+		}
+
+		@include mq(md) {
+			flex-direction: column-reverse;
+			align-items: flex-start;
+		}
 	}
 
 	&__items {
 		width: 100%;
 		max-width: 425px;
 		margin-right: 20px;
+
+		@include mq(md) {
+			max-width: 100%;
+			margin-right: 0;
+		}
 	}
 
 	&__item {
@@ -52,9 +77,12 @@
 		position: relative;
 		width: 100%;
 		max-width: 425px;
-		padding-top: 72px;
-		padding-bottom: 100px;
-		padding-left: 56px;
+		padding: 72px 0 100px 56px;
+
+		@include mq(md) {
+			margin: -40px 0 30px;
+			padding: 90px 0 50px 20px;
+		}
 
 		&::before {
 			position: absolute;
@@ -67,6 +95,17 @@
 			border-radius: 35%;
 			transform: rotate(45deg);
 			content: '';
+
+			@include mq(md) {
+				left: -40px;
+				transform: rotate(16deg);
+			}
+		}
+	}
+
+	&__decor {
+		@include mq(md) {
+			max-width: 240px;
 		}
 	}
 
@@ -75,7 +114,7 @@
 		@include adaptiv-value('margin-bottom', 35, 10, 1);
 		display: block;
 		color: $violet-400;
-		font-weight: $fw-700;
+		font-weight: $fw-600;
 	}
 
 	&__nonaccent {

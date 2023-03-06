@@ -51,7 +51,7 @@
 
 	&__title {
 		margin-bottom: 5px;
-		font-weight: $fw-700;
+		font-weight: $fw-600;
 		line-height: 1;
 		@include adaptiv-value('font-size', 35, 26, 1);
 
