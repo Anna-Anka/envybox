@@ -12,6 +12,9 @@
 @import './components/header/header';
 @import './components/header/header-top';
 
+// * cards
+@import './components/cards/tariff-card';
+
 @import './components/form-email';
 @import './components/footer';
 
@@ -26,3 +29,4 @@
 @import './home/how';
 @import './home/advantages';
 @import './home/services';
+@import './home/tariff';

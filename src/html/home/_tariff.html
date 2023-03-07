@@ -1,0 +1,35 @@
+<section class="tariff section">
+    <div class="container">
+        <h2 class="tariff__title title">
+            Тарифы установки квиза на сайт
+        </h2>
+        <ul class="tariff__items">
+            <li class="tariff__item">
+                @include('../components/cards/_tariff-card.html', {
+                    'class' : 'tariff-card tariff-card--transparent',
+                    'title' : 'Тестовая версия',
+                    'price' : '7 дней',
+                    'subtitle' : 'за 1 месяц'
+                })
+            </li>
+            <li class="tariff__item">
+                @include('../components/cards/_tariff-card.html', {
+                'class' : 'tariff-card',
+                'title' : 'При оплате на 3 месяца',
+                'price' : '833 ₽',
+                'subtitle' : 'за 1 месяц'
+                })
+            </li>
+            <li class="tariff__item">
+                @include('../components/cards/_tariff-card.html', {
+                'class' : 'tariff-card',
+                'title' : 'При оплате на год',
+                'price' : '745 ₽',
+                'subtitle' : 'за 1 месяц',
+                'label' : 'true',
+                'label-text' : 'экономия 2 980₽'
+                })
+            </li>
+        </ul>
+    </div>
+</section>
