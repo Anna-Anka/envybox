@@ -1,0 +1,85 @@
+.case-card {
+	@include adaptiv-value('padding', 30, 16, 1);
+	background-color: $blue-100;
+	border-radius: 24px;
+
+	&__header {
+		@include adaptiv-value('margin-bottom', 24, 12, 1);
+		display: flex;
+		line-height: 1;
+
+		@include mq(md) {
+			flex-direction: column;
+		}
+	}
+
+	&__ava {
+		@include adaptiv-value('width', 110, 65, 1);
+		@include adaptiv-value('height', 110, 65, 1);
+		margin-right: 25px;
+		object-fit: contain;
+		border-radius: 50%;
+	}
+
+	&__title,
+	&__subtitle {
+		@include adaptiv-value('margin-bottom', 15, 10, 1);
+	}
+
+	&__title {
+		font-weight: $fw-500;
+		@include adaptiv-value('font-size', 26, 20, 1);
+	}
+
+	&__subtitle {
+		@include adaptiv-value('font-size', 21, 18, 1);
+	}
+
+	&__link {
+		color: $blue-400;
+		font-size: 16px;
+	}
+
+	&__items {
+		@include adaptiv-value('margin-bottom', 30, 18, 1);
+	}
+
+	&__item {
+		display: flex;
+        font-size: 16px;
+
+		@include mq(sm) {
+			flex-direction: column;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+
+            @include mq(sm) {
+                margin-bottom: 8px;
+            }
+		}
+	}
+
+	&__question {
+		width: 100%;
+		max-width: 120px;
+		margin-right: 20px;
+		font-weight: $fw-500;
+
+		@include mq(sm) {
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: 3px;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		p {
+			&:not(:last-child) {
+				@include adaptiv-value('margin-bottom', 12, 6, 1);
+			}
+		}
+	}
+}

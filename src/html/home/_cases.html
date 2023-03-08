@@ -1,0 +1,55 @@
+<section class="cases section">
+    <div class="cases__container container">
+        <h2 class="cases__title title">
+            Кейсы наших клиентов
+        </h2>
+        <ul class="cases__filters">
+            <li class="cases__filter" data-filter=".category-shop">
+                <button class="cases__nav" type="button">Интернет-магазины</button>
+            </li>
+            <li class="cases__filter" data-filter=".category-services">
+                <button class="cases__nav" type="button">Услуги</button>
+            </li>
+            <li class="cases__filter" data-filter=".category-produce">
+                <button class="cases__nav" type="button">Производство</button>
+            </li>
+            <li class="cases__filter" data-filter=".category-building">
+                <button class="cases__nav" type="button">Строительство</button>
+            </li>
+            <li class="cases__filter" data-filter=".category-education">
+                <button class="cases__nav" type="button">Образование</button>
+            </li>
+        </ul>
+        <ul class="cases__items">
+            <li class="cases__item mix category-education">
+                @include('../components/cards/_case-card.html', {
+                    'ava' : '5',
+                    'ava-alt' : 'Алексей Фомин',
+                    'title' : 'Сервис Envybox — это просто находка!',
+                    'subtitle' : 'Алексей Фомин, руководитель Сервисного центра Apple "ISupport"',
+                    'link' : 'isupport.kz/',
+                    'niche' : 'Услуги',
+                    'tools' : 'Квиз, Обратный звонок',
+                    'contacts' : '+7 701 794 71 67',
+                    'published' : '27.12.2021',
+                    'text' : '<p>Сервисный центр Apple в Алматы — разбитое стекло экрана iPhone, iPad, AppleWatch или поврежденный корпус MacBook — очень серьезные поломки, требующие немедленного ремонта. Но нет таких поломок, которые нельзя было бы починить. Мы предлагаем ремонт Apple в Алматы для исправления технических и механических неисправностей данной продукции. Найдем и отремонтируем технические и механические ошибки.</p><p>Сотрудничаем с Envybox почти год. Используем на нашем сайте виджеты Квиз и Обратный звонок. Главное преимущество сервисов в том, что они работают на охваты пользователей, которые оставляют заявки. За счет чего растет конверсия!</p> '
+                })
+            </li>
+            <li class="cases__item mix category-shop">
+                @include('../components/cards/_case-card.html', {
+                'ava' : '5',
+                'ava-alt' : 'Алексей Фомин',
+                'title' : 'Сервис Envybox — это просто находка!',
+                'subtitle' : 'Алексей Фомин, руководитель Сервисного центра Apple "ISupport"',
+                'link' : 'isupport.kz/',
+                'niche' : 'Услуги',
+                'tools' : 'Квиз, Обратный звонок',
+                'contacts' : '+7 701 794 71 67',
+                'published' : '27.12.2021',
+                'text' : '<p>Сервисный центр Apple в Алматы — разбитое стекло экрана iPhone, iPad, AppleWatch или поврежденный корпус MacBook — очень серьезные поломки, требующие немедленного ремонта. Но нет таких поломок, которые нельзя было бы починить. Мы предлагаем ремонт Apple в Алматы для исправления технических и механических неисправностей данной продукции. Найдем и отремонтируем технические и механические ошибки.</p> <p>Сотрудничаем с Envybox почти год. Используем на нашем сайте виджеты Квиз и Обратный звонок. Главное преимущество сервисов в том, что они работают на охваты пользователей, которые оставляют заявки. За счет чего растет конверсия!</p> '
+                })
+            </li>
+        </ul>
+        <a class="cases__more button" href="#">Читать все кейсы</a>
+    </div>
+</section>

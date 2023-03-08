@@ -1,0 +1,56 @@
+.cases {
+	&__container {
+		max-width: 965px;
+	}
+
+	&__filters {
+		display: flex;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		overflow-x: auto;
+	}
+
+	&__filter {
+		display: flex;
+
+		&:not(:last-child) {
+			margin-right: 12px;
+		}
+	}
+
+	.mixitup-control-active {
+		.cases__nav {
+			color: $white;
+			background-color: $blue-400;
+		}
+	}
+
+	&__nav {
+		padding: 8px 16px;
+		color: $blue-400;
+		font-weight: $fw-500;
+		white-space: nowrap;
+		background-color: transparent;
+		border: 2px solid $blue-400;
+		border-radius: 6px;
+		transition: color 0.4s, background-color 0.4s;
+	}
+
+	&__items {
+		margin-bottom: 24px;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__more {
+		padding: 13px 16px;
+		color: $blue-400;
+		font-weight: $fw-500;
+		border: 2px solid $blue-400;
+		border-radius: 6px;
+	}
+}

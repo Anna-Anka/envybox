@@ -76,8 +76,12 @@
 //import 'fslightbox'
 
 // * Подключение mixit up
-//import mixitup from 'mixitup';
-//let mixer = mixitup('.sort-content');
+import mixitup from 'mixitup';
+if (document.querySelector('.cases__items')) {
+    let mixer = mixitup('.cases__items', {
+        load: { filter: '.category-shop' }
+    });
+}
 
 // * Подключение Isotope
 // import Isotope from "isotope-layout";
