@@ -1,0 +1,54 @@
+.promo {
+	position: relative;
+	display: none;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	color: $white;
+	background-color: $dark-800;
+
+	&::before {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background-color: inherit;
+		transform: skewY(3deg);
+		transform-origin: right top;
+		content: '';
+	}
+
+	@include mq(sm) {
+		display: block;
+	}
+
+	&__title,
+	&__text {
+		margin-bottom: 18px;
+        line-height: 1.4;
+	}
+
+    &__accent {
+		color: $yellow-400;
+
+        &--text {
+            color: $white;
+        }
+	}
+
+    &__text {
+		font-weight: $fw-500;
+		font-size: 16px;
+
+        &--opacity {
+            color: rgba($white, 0.6);
+        }
+
+		p {
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+	}
+}

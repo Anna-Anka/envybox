@@ -1,0 +1,43 @@
+.reviews {
+    padding-top: 0;
+
+    @include mq(sm) {
+        padding-bottom: 50px;
+    }
+
+    &__container {
+        @include mq(sm) {
+            padding: 0;
+        }
+    }
+
+	&__wrapper {
+		padding: 20px;
+		@include flex-column-all-center;
+		background-image: url('../img/reviews-bg.png');
+		@include adaptiv-value('height', 480, 280, 1);
+	}
+
+	&__title {
+		color: $white;
+		text-align: center;
+        @include adaptiv-value('font-size', 54, 32, 1);
+		@include adaptiv-value('margin-bottom', 48, 26, 1);
+	}
+
+	&__link {
+		@include flex-all-center;
+		padding: 16px 36px;
+		color: $blue-400;
+		font-weight: $fw-500;
+		background-color: $white;
+		border: solid 2px rgba(36, 117, 230, 0.5);
+		border-radius: 6px;
+		box-shadow: 0 1px 2px 0 rgb(36 117 230 / 20%);
+		@include adaptiv-value('font-size', 18, 16, 1);
+
+		@include mq(md) {
+			padding: 14px 32px;
+		}
+	}
+}

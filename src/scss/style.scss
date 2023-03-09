@@ -11,6 +11,7 @@
 // * components
 @import './components/header/header';
 @import './components/header/header-top';
+@import './components/promo';
 
 // * cards
 @import './components/cards/tariff-card';
@@ -33,3 +34,4 @@
 @import './home/tariff';
 @import './home/integration';
 @import './home/cases';
+@import './home/reviews';
