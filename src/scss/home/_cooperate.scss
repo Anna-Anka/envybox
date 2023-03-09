@@ -1,0 +1,16 @@
+.cooperate {
+	display: none;
+	padding-top: 0;
+
+	@include mq(sm) {
+		display: block;
+	}
+
+	&__items {
+		@include mq(md) {
+            display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 6px;
+		}
+	}
+}

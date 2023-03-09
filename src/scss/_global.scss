@@ -101,7 +101,7 @@ body {
 	font-weight: $fw-600;
 	line-height: 1;
 	@include adaptiv-value('font-size', 53, 22, 1);
-	@include adaptiv-value('margin-bottom', 60, 35, 1);
+	@include adaptiv-value('margin-bottom', 60, 25, 1);
 }
 
 .swiper-pagination-bullet {

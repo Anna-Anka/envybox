@@ -1,0 +1,29 @@
+.logo-card {
+	background-color: $blue-100;
+	border-radius: 4px;
+	@include adaptiv-value('height', 140, 112, 1);
+
+	&__link,
+	&__image,
+	&__img {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__link {
+		@include adaptiv-value('padding', 10, 4, 1);
+		@include flex-all-center;
+
+		@include mq(md) {
+			padding: 0;
+		}
+	}
+
+	&__image {
+		display: block;
+	}
+
+	&__img {
+		object-fit: contain;
+	}
+}
