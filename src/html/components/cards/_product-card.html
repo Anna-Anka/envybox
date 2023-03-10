@@ -1,0 +1,41 @@
+<article class="product-card" style="background-color: @bg-color;">
+    <div class="product-card__info">
+        <h3 class="product-card__offer">
+            <a class="products-card__title" href="#">@title</a>
+        </h3>
+
+        @if(context.nonaccent === 'true') {
+        <div class="product-card__nonaccent">@nonaccent-text</div>
+        }
+
+        <div class="product-card__text">@text</div>
+    </div>
+
+    <div class="producr-card__bottom">
+        <div class="product-card__wrapper">
+            <div class="product-card__swiper swiper">
+                <ul class="product-card__items swiper-wrapper">
+                    <li class="product-card__item swiper-slide">
+                        <picture>
+                            <source srcset="img/product/@img.avif" type="image/avif">
+                            <source srcset="img/product/@img.webp" type="image/webp">
+                            <img class="product-card__img" src="img/product/@img.png" alt="Картинка 1" loading="lazy">
+                        </picture>
+                    </li>
+                    <li class="product-card__item swiper-slide">
+                        <picture>
+                            <source srcset="img/product/@img.avif" type="image/avif">
+                            <source srcset="img/product/@img.webp" type="image/webp">
+                            <img class="product-card__img" src="img/product/@img.png" alt="Картинка 1" loading="lazy">
+                        </picture>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <button class="product-card__button button" type="button">Попробовать бесплатно</button>
+
+        <p class="products-card__subtext">Установлено на @numbers сайтах </p>
+    </div>
+</article>

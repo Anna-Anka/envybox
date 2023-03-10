@@ -32,13 +32,7 @@
 	}
 
 	&__button {
-		padding: 16px 22px;
-		color: $dark-800;
 		font-weight: $fw-600;
-		line-height: 1.3;
-		background-color: $yellow-400;
-		border-radius: 6px;
-		box-shadow: 0 2px 1px 0 rgb(255 229 59 / 36%);
 
 		@include mq(md) {
 			max-width: 100%;

@@ -1,7 +1,7 @@
 .cases {
-    @include mq(sm) {
-        padding-top: 0;
-    }
+	@include mq(sm) {
+		padding-top: 0;
+	}
 
 	&__container {
 		max-width: 965px;
@@ -54,6 +54,7 @@
 		padding: 13px 16px;
 		color: $blue-400;
 		font-weight: $fw-500;
+		background-color: transparent;
 		border: 2px solid $blue-400;
 		border-radius: 6px;
 	}
