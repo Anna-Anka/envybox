@@ -1,0 +1,16 @@
+.social {
+	display: flex;
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 12px;
+		}
+	}
+
+	&__link {
+		display: block;
+		width: 30px;
+		height: 30px;
+        @include bg-conatin;
+	}
+}

@@ -1,3 +1,132 @@
 .footer {
-    
+	padding: 48px 0 30px;
+
+	&__wrapper {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		display: flex;
+	}
+
+	&__inner {
+		margin-bottom: 30px;
+	}
+
+	&__box {
+		display: flex;
+	}
+
+	&__content {
+		max-width: 260px;
+		width: 100%;
+		margin-right: 60px;
+
+		@include mq(lg) {
+			margin-right: 30px;
+		}
+
+		@include mq(md) {
+			margin-right: 0;
+		}
+	}
+
+	&__logo,
+	&__contact,
+	&__offer {
+		margin-bottom: 15px;
+	}
+
+	&__logo {
+		width: 130px;
+		height: 40px;
+	}
+
+	&__contact {
+		position: relative;
+		padding-left: 36px;
+		font-size: 16px;
+		display: inline-block;
+
+		&::before {
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			content: '';
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			@include bg-conatin;
+		}
+
+		&--phone {
+			&::before {
+				// background-image: url('../img/icons/phone.svg');
+				filter: invert(1);
+				background-image: url('../img/icons/email.svg');
+			}
+		}
+
+		&--email {
+			&::before {
+				filter: invert(1);
+				background-image: url('../img/icons/email.svg');
+			}
+		}
+	}
+
+	&__text {
+		font-size: 12px;
+		opacity: 0.5;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__info,
+	&__offer {
+		display: block;
+	}
+
+	&__offer {
+		font-size: 12px;
+	}
+
+	&__box {
+		width: 100%;
+
+		@include mq(md) {
+			display: none;
+		}
+	}
+
+	&__list {
+		max-width: 305px;
+		width: 100%;
+
+		&:not(:last-child) {
+			margin-right: 40px;
+
+			@include mq(lg) {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&__subtitle {
+		display: block;
+		font-size: 21px;
+		font-weight: $fw-600;
+		margin-bottom: 24px;
+	}
+
+	&__item {
+		margin-bottom: 13px;
+		font-size: 16px;
+		color: $blue-400;
+	}
+
+	&__link {
+		border-bottom: 1px solid rgba($blue-400, 0.3);
+	}
 }
