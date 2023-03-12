@@ -1,5 +1,10 @@
 .what {
 	position: relative;
+    padding: 150px 0 50px;
+
+	@include mq(md) {
+		padding: 50px 0 25px;
+	}
 
 	&::after {
 		position: absolute;
@@ -8,9 +13,13 @@
 		width: 100%;
 		height: 100%;
 		background-color: $blue-100;
-		transform: skewY(3deg);
+		transform: skewY(2deg);
 		transform-origin: left bottom;
 		content: '';
+
+		@include mq(md) {
+			transform: skewY(-1deg);
+		}
 	}
 
 	&__title {
@@ -28,7 +37,7 @@
 			flex-direction: column;
 		}
 
-        @include mq(md) {
+		@include mq(md) {
 			align-items: flex-start;
 		}
 
@@ -40,10 +49,10 @@
 				max-width: 557px;
 				height: 325px;
 
-                @include mq(sm) {
-                    max-width: 100%;
-                    height: 160px;
-                }
+				@include mq(sm) {
+					max-width: 100%;
+					height: 160px;
+				}
 			}
 		}
 
@@ -55,10 +64,10 @@
 				max-width: 604px;
 				height: 484px;
 
-                @include mq(sm) {
-                    max-width: 100%;
-                    height: 230px;
-                }
+				@include mq(sm) {
+					max-width: 100%;
+					height: 230px;
+				}
 			}
 		}
 
@@ -71,10 +80,10 @@
 				max-width: 454px;
 				height: 458px;
 
-                @include mq(sm) {
-                    max-width: 225px;
-                    height: 190px;
-                }
+				@include mq(sm) {
+					max-width: 225px;
+					height: 190px;
+				}
 			}
 		}
 
@@ -85,10 +94,10 @@
 				max-width: 386px;
 				height: 309px;
 
-                @include mq(sm) {
-                    max-width: 240px;
-                    height: 190px;
-                }
+				@include mq(sm) {
+					max-width: 240px;
+					height: 190px;
+				}
 			}
 		}
 
@@ -99,10 +108,10 @@
 				max-width: 563px;
 				height: 331px;
 
-                @include mq(sm) {
-                    max-width: 225px;
-                    height: 160px;
-                }
+				@include mq(sm) {
+					max-width: 225px;
+					height: 160px;
+				}
 			}
 		}
 
@@ -132,9 +141,9 @@
 				}
 			}
 
-            .what__content {
+			.what__content {
 				margin-right: 0;
-                margin-bottom: 25px;
+				margin-bottom: 25px;
 			}
 		}
 
@@ -152,19 +161,19 @@
 		width: 100%;
 		max-width: 485px;
 
-        @include mq(md) {
-            max-width: 100%;
-        }
+		@include mq(md) {
+			max-width: 100%;
+		}
 	}
 
 	&__subtitle {
-		font-weight: $fw-600;
+		font-weight: 600;
 		@include adaptiv-value('font-size', 35, 22, 1);
 		@include adaptiv-value('margin-bottom', 35, 18, 1);
 	}
 
 	&__subtext {
-		font-weight: $fw-500;
+		font-weight: 500;
 		@include adaptiv-value('font-size', 22, 16, 1);
 		@include adaptiv-value('margin-bottom', 20, 10, 1);
 	}

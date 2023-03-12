@@ -1,6 +1,10 @@
 .footer {
 	padding: 48px 0 30px;
 
+	@include mq(sm) {
+		padding-top: 30px;
+	}
+
 	&__wrapper {
 		width: 100%;
 		max-width: 1000px;
@@ -46,6 +50,7 @@
 		padding-left: 36px;
 		font-size: 16px;
 		display: inline-block;
+		font-weight: 500;
 
 		&::before {
 			position: absolute;
@@ -90,6 +95,7 @@
 
 	&__offer {
 		font-size: 12px;
+		text-decoration: underline;
 	}
 
 	&__box {
@@ -116,7 +122,7 @@
 	&__subtitle {
 		display: block;
 		font-size: 21px;
-		font-weight: $fw-600;
+		font-weight: 600;
 		margin-bottom: 24px;
 	}
 

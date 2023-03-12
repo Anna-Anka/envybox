@@ -1,4 +1,10 @@
 .integration {
+    padding-bottom: 0;
+
+    @include mq(sm) {
+        padding-bottom: 50px;
+    }
+
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(231px, 1fr));

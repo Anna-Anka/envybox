@@ -2,6 +2,10 @@
     padding-top: 0;
 	line-height: 1;
 
+    @include mq(sm) {
+        padding-bottom: 0;
+    }
+
 	&__wrapper {
 		width: 100%;
 		max-width: 1050px;

@@ -84,6 +84,10 @@
 			padding: 90px 0 50px 20px;
 		}
 
+        @include mq(sm) {
+            padding-left: 0;
+        }
+
 		&::before {
 			position: absolute;
 			top: 0;
@@ -105,7 +109,7 @@
 
 	&__decor {
 		@include mq(md) {
-			max-width: 240px;
+			max-width: 250px;
 		}
 	}
 

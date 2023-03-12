@@ -5,6 +5,10 @@
 	background-color: $violet-400;
 	@include adaptiv-value('padding-bottom', 80, 40, 1);
 
+	@include mq(sm) {
+		display: none;
+	}
+
 	&::after {
 		position: absolute;
 		bottom: 0;
@@ -26,7 +30,6 @@
 	}
 
 	&__content {
-		position: relative;
 		width: 100%;
 		max-width: 520px;
 		margin-right: 20px;
@@ -35,23 +38,25 @@
 			max-width: 100%;
 			margin-right: 0;
 		}
-
-		&::before {
-			position: absolute;
-			top: 0;
-			right: 40px;
-			width: 70px;
-			height: 70px;
-			background-image: url('../img/icons/check.svg');
-			transform: translateY(-100%) translateX(100%);
-			content: '';
-			@include bg-conatin;
-		}
 	}
 
 	&__title {
+		position: relative;
+		display: inline-block;
 		margin-bottom: 30px;
 		color: $white;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			right: -100px;
+			width: 70px;
+			height: 70px;
+			background-image: url('../img/icons/check.svg');
+			transform: translateY(-50%);
+			content: '';
+			@include bg-conatin;
+		}
 	}
 
 	&__subtext {
@@ -63,7 +68,7 @@
 		font-weight: $fw-400;
 	}
 
-    &__images {
+	&__images {
 		position: relative;
 		width: 100%;
 		max-width: 528px;

@@ -32,7 +32,7 @@
 	}
 
 	&__button {
-		font-weight: $fw-600;
+		font-weight: 600;
 
 		@include mq(md) {
 			max-width: 100%;

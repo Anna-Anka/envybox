@@ -33,10 +33,12 @@
 
 	&__subtitle {
 		@include adaptiv-value('font-size', 21, 18, 1);
+		font-weight: 500;
 	}
 
 	&__link {
 		color: $blue-400;
+		font-weight: 500;
 		font-size: 16px;
 	}
 
@@ -46,7 +48,7 @@
 
 	&__item {
 		display: flex;
-        font-size: 16px;
+		font-size: 16px;
 
 		@include mq(sm) {
 			flex-direction: column;
@@ -55,9 +57,9 @@
 		&:not(:last-child) {
 			margin-bottom: 5px;
 
-            @include mq(sm) {
-                margin-bottom: 8px;
-            }
+			@include mq(sm) {
+				margin-bottom: 8px;
+			}
 		}
 	}
 
@@ -65,7 +67,6 @@
 		width: 100%;
 		max-width: 120px;
 		margin-right: 20px;
-		font-weight: $fw-500;
 
 		@include mq(sm) {
 			max-width: 100%;

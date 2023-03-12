@@ -18,13 +18,13 @@
 
     @include('./home/_integration.html')
 
-    @include('./home/_cooperate.html')
-
     @include('./components/_promo.html', {
         'title' : '<span class="promo__accent">в 12 раз больше заявок </span> с сайта при подключении всех сервисов',
         'class' : 'promo__text',
         'text' : '<p>Зарегистрируйтесь сейчас и получите скидку в 30% на подключение всех сервисов.</p>'
     })
+
+    @include('./home/_cooperate.html')
 
     <div class="feedback">
         @include('./home/_cases.html')
