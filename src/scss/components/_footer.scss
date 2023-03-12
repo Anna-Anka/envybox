@@ -72,6 +72,8 @@
 		}
 
 		&--email {
+            text-decoration: underline;
+            
 			&::before {
 				filter: invert(1);
 				background-image: url('../img/icons/email.svg');
