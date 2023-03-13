@@ -1,9 +1,9 @@
 .header-top {
+	position: relative;
+	z-index: 3;
 	font-size: 14px;
 	@include flex-center-sb;
 	@include adaptiv-value('margin-bottom', 65, 20, 1);
-	z-index: 3;
-	position: relative;
 
 	&__logo {
 		margin-right: 10px;
@@ -27,27 +27,14 @@
 			position: relative;
 			padding-right: 20px;
 
-			&::before {
-				position: absolute;
-				content: '';
-				width: 12px;
-				height: 12px;
-				// background-image: url('../img/icons/arrow.svg');
-				background-image: url('../img/logo.svg');
-				@include bg-conatin;
-				top: 50%;
-				transform: translateY(-50%);
-				right: 0;
-			}
-
 			&::after {
 				position: absolute;
-				content: '';
+				bottom: 0;
+				left: 0;
 				width: 100%;
 				height: 30px;
-				left: 0;
-				bottom: 0;
 				transform: translateY(100%);
+				content: '';
 			}
 
 			&:hover {
@@ -64,15 +51,15 @@
 
 	&__submenu {
 		position: absolute;
+		top: 30px;
+		left: 0;
 		display: none;
+		width: 184px;
+		padding: 24px;
 		background-color: $white;
 		border-radius: 6px;
 		box-shadow: 0 3px 6px 0 rgb($black, 20%);
-		width: 184px;
-		top: 30px;
-		left: 0;
 		transform: translateX(-30%);
-		padding: 24px;
 	}
 
 	&__dop {
@@ -85,52 +72,38 @@
 
 	&__contacts {
 		display: flex;
-		justify-content: flex-end;
 		align-items: center;
+		justify-content: flex-end;
 	}
 
 	&__phone,
 	&__email {
-		margin-right: 25px;
 		display: inline-block;
+		margin-right: 25px;
 	}
 
 	&__phone {
-		font-size: 18px;
-		font-weight: $fw-500;
 		color: $dark-800;
+		font-weight: $fw-500;
+		font-size: 18px;
 	}
 
 	&__email {
 		width: 20px;
 		height: 20px;
-		@include bg-conatin;
-		filter: invert(90%) sepia(3%) saturate(1664%) hue-rotate(202deg)
-			brightness(94%) contrast(87%);
-		background-image: url('../img/icons/email.svg');
+
+		.email-icon {
+			margin-right: 0;
+		}
 	}
 
 	&__account {
-		background-color: $violet-400;
+		padding: 12px 24px;
 		color: $white;
-		padding: 12px 44px 12px 24px;
-		position: relative;
-		font-size: 16px;
 		font-weight: 500;
+		font-size: 16px;
+		background-color: $violet-400;
 		border-radius: 6px;
 		box-shadow: 0 2px 1px 0 rgb(255 229 59 / 36%);
-
-		&::before {
-			position: absolute;
-			content: '';
-			width: 15px;
-			height: 15px;
-			top: 50%;
-			transform: translateY(-50%);
-			right: 15px;
-			@include bg-conatin;
-			// background-image: url('../img/icons/arrow-long.svg');
-			background-image: url('../img/icons/email.svg');
-		}
 	}
 }

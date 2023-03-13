@@ -6,10 +6,10 @@
 	}
 
 	&__wrapper {
+		display: flex;
 		width: 100%;
 		max-width: 1000px;
 		margin: 0 auto;
-		display: flex;
 	}
 
 	&__inner {
@@ -21,8 +21,8 @@
 	}
 
 	&__content {
-		max-width: 260px;
 		width: 100%;
+		max-width: 260px;
 		margin-right: 60px;
 
 		@include mq(lg) {
@@ -47,38 +47,10 @@
 
 	&__contact {
 		position: relative;
-		padding-left: 36px;
-		font-size: 16px;
-		display: inline-block;
+		display: flex;
+		align-items: center;
 		font-weight: 500;
-
-		&::before {
-			position: absolute;
-			width: 18px;
-			height: 18px;
-			content: '';
-			top: 50%;
-			transform: translateY(-50%);
-			left: 0;
-			@include bg-conatin;
-		}
-
-		&--phone {
-			&::before {
-				// background-image: url('../img/icons/phone.svg');
-				filter: invert(1);
-				background-image: url('../img/icons/email.svg');
-			}
-		}
-
-		&--email {
-            text-decoration: underline;
-            
-			&::before {
-				filter: invert(1);
-				background-image: url('../img/icons/email.svg');
-			}
-		}
+		font-size: 16px;
 	}
 
 	&__text {
@@ -109,8 +81,8 @@
 	}
 
 	&__list {
-		max-width: 305px;
 		width: 100%;
+		max-width: 305px;
 
 		&:not(:last-child) {
 			margin-right: 40px;
@@ -123,15 +95,15 @@
 
 	&__subtitle {
 		display: block;
-		font-size: 21px;
-		font-weight: 600;
 		margin-bottom: 24px;
+		font-weight: 600;
+		font-size: 21px;
 	}
 
 	&__item {
 		margin-bottom: 13px;
-		font-size: 16px;
 		color: $blue-400;
+		font-size: 16px;
 	}
 
 	&__link {

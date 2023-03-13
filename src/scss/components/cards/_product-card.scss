@@ -84,6 +84,11 @@
 		bottom: 12px;
 	}
 
+	&__item {
+		display: flex;
+		justify-content: center;
+	}
+
 	&__img {
 		max-width: 262px;
 		height: 100%;

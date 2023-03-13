@@ -19,6 +19,7 @@
     @include('./home/_integration.html')
 
     @include('./components/_promo.html', {
+        'id' : 'email',
         'title' : '<span class="promo__accent">в 12 раз больше заявок </span> с сайта при подключении всех сервисов',
         'class' : 'promo__text',
         'text' : '<p>Зарегистрируйтесь сейчас и получите скидку в 30% на подключение всех сервисов.</p>'
@@ -32,6 +33,7 @@
     </div>
 
     @include('./components/_promo.html', {
+        'id' : 'connect',
         'title' : 'Дополнения для сайта, которые дадут Вам больше клиентов и прибыли уже <span class="promo__accent">через 9 минут </span>',
         'class' : 'promo__text promo__text--opacity',
         'text' : '<p>Используйте все сразу или только то, что нужно! Попробуйте <span class="promo__accent promo__accent--text"> бесплатно в течение 7 дней!</span> Посмотрите на ваши результаты!</p>'

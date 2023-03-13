@@ -114,6 +114,10 @@ body {
 	line-height: 1;
 	@include adaptiv-value('font-size', 53, 29, 1);
 	@include adaptiv-value('margin-bottom', 45, 25, 1);
+    
+    @include mq(sm) {
+        font-size: 25px;
+    }
 }
 
 .swiper-pagination-bullet {
@@ -138,4 +142,11 @@ body {
 	@include mq(sm) {
 		flex-direction: column-reverse;
 	}
+}
+
+.email-icon,
+.phone-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 18px;
 }
