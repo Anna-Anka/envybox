@@ -26,6 +26,7 @@
                 <ul class="header-top__items">
                     <li class="header-top__item header-top__item--dop">
                         <a href="#">Продукты</a>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
                         <ul class="header-top__submenu">
                             <li class="header-top__dop">
                                 <a href="#">Обратный звонок</a>
@@ -70,9 +71,11 @@
                     <a class="header-top__phone" href="tel:84993229710">8 499 322-97-10</a>
                     <a class="header-top__email" href="mailto:support@envybox.io">
                         <span class="sr-only">Электронная почта</span>
+                        <img class="email-icon" src="/bitrix/templates/envybox/images/icon-mail.svg" alt="" aria-hidden>
                     </a>
                     <a class="header-top__account button" href="#">
                         Войти
+                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -93,38 +96,38 @@
                 </p>
                 <ul class="header__tags">
                     <li class="header__tag">
-                        <a class="header__anchor" href="#">Что умеет Квиз?</a>
+                        <a class="header__anchor" href="#" data-goto="#what">Что умеет Квиз?</a>
                     </li>
                     <li class="header__tag">
-                        <a class="header__anchor" href="#">Как это работает?
+                        <a class="header__anchor" href="#" data-goto="#how">Как это работает?
                         </a>
                     </li>
                     <li class="header__tag">
-                        <a class="header__anchor" href="#">Наши преимущества</a>
+                        <a class="header__anchor" href="#" data-goto="#advantages">Наши преимущества</a>
                     </li>
                     <li class="header__tag">
-                        <a class="header__anchor" href="#">Стоимость</a>
+                        <a class="header__anchor" href="#" data-goto="#tariff">Стоимость</a>
                     </li>
                 </ul>
                 <ul class="header__tags header__tags--mobile">
                     <li class="header__tag">
-                        <a class="header__anchor" href="#">Что дает видеовиджет?</a>
+                        <a class="header__anchor" href="#" data-goto="#what">Что дает видеовиджет?</a>
                     </li>
                     <li class="header__tag">
-                        <a class="header__anchor" href="#">Стоимость
+                        <a class="header__anchor" href="#" data-goto="#tariff">Стоимость
                         </a>
                     </li>
                     <li class="header__tag">
-                        <a class="header__anchor" href="#">E-mail</a>
+                        <a class="header__anchor" href="#" data-goto="#email">E-mail</a>
                     </li>
                     <li class="header__tag">
-                        <a class="header__anchor" href="#">Как это работает?</a>
+                        <a class="header__anchor" href="#" data-goto="#how">Как это работает?</a>
                     </li>
                     <li class="header__tag">
-                        <a class="header__anchor" href="#">Преимущества</a>
+                        <a class="header__anchor" href="#" data-goto="#advantages">Преимущества</a>
                     </li>
                     <li class="header__tag">
-                        <a class="header__anchor" href="#">Подключить за 0 руб</a>
+                        <a class="header__anchor" href="#" data-goto="#connect">Подключить за 0 руб</a>
                     </li>
                 </ul>
                 <form class="form-email" action="#">
@@ -160,7 +163,7 @@
 </header>
 
 <main class="main">
-    <section class="what">
+    <section class="what" id="what">
     <div class="container">
         <h2 class="what__title title">
             Что умеет наш квиз?
@@ -270,7 +273,7 @@
     </div>
 </section>
 
-    <section class="how section">
+    <section class="how section" id="how">
     <div class="container container--small">
         <h2 class="how__title title">
             Как это работает?
@@ -322,7 +325,7 @@
     </div>
 </section>
 
-    <section class="advantages section">
+    <section class="advantages section" id="advantages">
     <div class="container container--small">
         <h2 class="advantages__title title">
             Наши преимущества
@@ -476,7 +479,7 @@
     </div>
 </section>
 
-    <section class="tariff section">
+    <section class="tariff section" id="tariff">
     <div class="container">
         <h2 class="tariff__title title">
             Тарифы установки квиза на сайт
@@ -602,7 +605,7 @@
     </div>
 </section>
 
-    <section class="promo">
+    <section class="promo" id="email">
     <div class="container">
         <h2 class="promo__title title">
             <span class="promo__accent">в 12 раз больше заявок </span> с сайта при подключении всех сервисов
@@ -804,7 +807,7 @@
 </section>
     </div>
 
-    <section class="promo">
+    <section class="promo" id="connect">
     <div class="container">
         <h2 class="promo__title title">
             Дополнения для сайта, которые дадут Вам больше клиентов и прибыли уже <span class="promo__accent">через 9 минут </span>
@@ -1122,8 +1125,14 @@
                     <a class="footer__logo logo" href="#">
                         <img class="logo__img" src="img/logo-black.svg" alt="логотип" width="180" height="55" loading="lazy">
                     </a>
-                    <a class="footer__contact footer__contact--phone" href="tel:+74993229710">8 499 322-97-10</a>
-                    <a class="footer__contact footer__contact--email" href="mailto:support@envybox.io">support@envybox.io</a>
+                    <a class="footer__contact" href="tel:+74993229710">
+                        <img src="/bitrix/templates/envybox/images/icon-phone.svg" alt="" class="phone-icon" aria-hidden>
+                        8 499 322-97-10
+                    </a>
+                    <a class="footer__contact" href="mailto:support@envybox.io">
+                        <img src="/bitrix/templates/envybox/images/icon-phone.svg" alt="" class="email-icon" aria-hidden>
+                        support@envybox.io
+                    </a>
                     <p class="footer__text">
                         <span class="footer__info">ОГРН: 1175835011934</span>
                         <span class="footer__info">ООО «Энвибокс»</span>

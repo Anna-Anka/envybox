@@ -7,7 +7,7 @@
   \*******************************/
 /***/ (() => {
 
-console.log('components');
+
 
 /***/ }),
 
@@ -61,82 +61,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var mixitup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mixitup */ "./node_modules/mixitup/dist/mixitup.js");
 /* harmony import */ var mixitup__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(mixitup__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _templates_smooth_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./templates/smooth-scroll */ "./src/js/templates/smooth-scroll.js");
 /* eslint-disable import/extensions */
 /* eslint-disable spaced-comment */
 /* eslint-disable import/no-relative-packages */
-
-// Данный файл - лишь собрание подключений готовых компонентов.
-// Рекомендуется создавать отдельный файл в папке components и подключать все там
-
-// * stepper
-//import { stepperFunction } from "./functions/stepper";
-//stepperFunction()
-
-// * accordion
-//import { accordionFunction } from "./templates/accordion";
-//accordionFunction();
-
-// * Определение операционной системы на мобильных
-// import { mobileCheck } from "./functions/mobile-check";
-// console.log(mobileCheck())
-
-// * Определение ширины экрана
-// import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
-// if (isDesktop()) {
-//   console.log('...')
-// }
-
-// * Троттлинг функции (для ресайза, ввода в инпут, скролла и т.д.)
-// import { throttle } from './functions/throttle';
-// let yourFunc = () => { console.log('throttle') };
-// let func = throttle(yourFunc);
-// window.addEventListener('resize', func);
-
-// * Фикс фулскрин-блоков
-// import './functions/fix-fullheight';
-
-// * Реализация бургер-меню
-//import { burger } from './templates/burger';
-
-//burger();
-
-// * Реализация остановки скролла (не забудьте вызвать функцию)
-// import { disableScroll } from './templates/disable-scroll';
-
-// * Реализация включения скролла (не забудьте вызвать функцию)
-// import { enableScroll } from './templates/enable-scroll';
-
-// * Реализация модального окна
-//import GraphModal from 'graph-modal';
-
-//const modal = new GraphModal('modal');
-
-// * Реализация табов
-//import GraphTabs from 'graph-tabs';
-//const tabs = new GraphTabs('tab');
-
-// * Получение высоты шапки сайта (не забудьте вызвать функцию)
-// import { getHeaderHeight } from './functions/header-height';
-
-// * Подключение плагина кастом-скролла
-//import 'simplebar';
-
-// * Подключение плагина для позиционирования тултипов
-// import { createPopper, right} from '@popperjs/core';
-// createPopper(el, tooltip, {
-//   placement: 'right'
-// });
-
-// * Подключение анимаций по скроллу
-// import AOS from 'aos';
-// AOS.init();
-
-// * Подключение параллакса блоков при скролле
-// import Rellax from 'rellax';
-// const rellax = new Rellax('.rellax');
-
-// * Подключение галереи (Fullscreen Lightbox)
-//import 'fslightbox'
 
 // * Подключение mixit up
 
@@ -148,94 +76,9 @@ if (document.querySelector('.cases__items')) {
   });
 }
 
-// * Подключение Isotope
-// import Isotope from "isotope-layout";
-// const elem = document.querySelector('.');
-// const iso = new Isotope(elem, {
-//     itemSelector: '.',
-//     layoutMode: 'masonry'
-// });
-
-// * Подключение inputmask
-// import Inputmask from "inputmask";
-// let inputs = document.querySelectorAll('input[type="tel"]')
-// let im = new Inputmask('+7 (999) 999-99-99')
-// im.mask(inputs)
-
-// * Подключение choices.js
-// import Choices from "choices.js";
-
-// const defaultSelect = () => {
-//     const element = document.querySelector('.default');
-//     const choices = new Choices(element, {
-//         searchEnabled: false
-//     });
-// }
-
-// defaultSelect()
-
-// * Подключение just-validate
-//import JustValidate from "just-validate";
-
-//Если несколько форм
-// const forms = document.querySelectorAll('.form')
-// forms.forEach((form) => {
-//     const formValidation = new JustValidate(form)
-
-//     formValidation.addField('input[type="email"]', [
-//         {
-//             rule: 'required',
-//             errorMessage: 'Поле должно быть заполнено',
-//         },
-//         {
-//             rule: 'email',
-//             errorMessage: 'Введите корректный email',
-//         },
-//     ]);
-// })
-
-//Если одна форма
-// const validation = new JustValidate('.test');
-
-// validation.addField('input[type="email"]', [
-//     {
-//         rule: 'required',
-//         errorMessage: 'Поле должно быть заполнено',
-//     },
-//     {
-//         rule: 'email',
-//         errorMessage: 'Введите корректный email',
-//     },
-// ]);
-
-// * Подключение marquee
-//import { handleMarquee } from "./templates/marquee";
-//handleMarquee();
-
-// * Подключение липкой шапки
-//import { headerSticky } from "./templates/header-sticky";
-
-//headerSticky();
-
 // * Подключение плавного скролла
-//import { smoothScroll } from "./templates/smooth-scroll";
 
-//smoothScroll();
-
-// * Подключение карты
-//import { mapFunction } from './templates/map';
-
-//mapFunction();
-
-// * Подключение паралакса
-//import { parallax } from './templates/parallax';
-
-//parallax();
-
-// * Подключение печатающегося текста
-//import { type } from './templates/type';
-
-//type();
+(0,_templates_smooth_scroll__WEBPACK_IMPORTED_MODULE_1__.smoothScroll)();
 
 /***/ }),
 
@@ -337,6 +180,40 @@ const quizzesSlider = () => {
         clickable: true
       }
     });
+  }
+};
+
+/***/ }),
+
+/***/ "./src/js/templates/smooth-scroll.js":
+/*!*******************************************!*\
+  !*** ./src/js/templates/smooth-scroll.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "smoothScroll": () => (/* binding */ smoothScroll)
+/* harmony export */ });
+const smoothScroll = () => {
+  const menuLinks = document.querySelectorAll('a[data-goto]');
+  if (menuLinks.length > 0) {
+    menuLinks.forEach(menuLink => {
+      menuLink.addEventListener('click', onMenuLinkClick);
+    });
+    function onMenuLinkClick(e) {
+      const menuLink = e.target;
+      if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+        const gotoBlock = document.querySelector(menuLink.dataset.goto);
+        const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header__row').offsetHeight + 300;
+        window.scrollTo({
+          top: gotoBlockValue,
+          behavior: "smooth"
+        });
+        e.preventDefault();
+      }
+    }
   }
 };
 
